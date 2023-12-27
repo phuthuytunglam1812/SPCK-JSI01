@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="materialContainer">
+            <div class="box">
+                <div class="title">LOGIN</div>
+
+                <div class="input">
+                    <input
+                        type="text"
+                        name="name"
+                        id="emailLogin"
+                        placeholder="Email"
+                    />
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <input
+                        type="password"
+                        name="pass"
+                        id="passLogin"
+                        placeholder="Password"
+                    />
+                    <span class="spin"></span>
+                </div>
+
+                <div class="button login">
+                    <button onclick="logIn()">
+                        <span>GO</span> <i class="fa fa-check"></i>
+                    </button>
+                </div>
+
+                <a href="" class="pass-forgot">Forgot your password?</a>
+            </div>
+
+            <div class="overbox">
+                <div class="material-button alt-2">
+                    <span class="shape"></span>
+                </div>
+
+                <div class="title">REGISTER</div>
+
+                <div class="input">
+                    <!-- <label for="regname">Register Email</label> -->
+                    <input
+                        type="text"
+                        name="regname"
+                        id="regEmail"
+                        placeholder="Email"
+                    />
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <!-- <label for="regpass">Password</label> -->
+                    <input
+                        type="password"
+                        name="regpass"
+                        id="regPass"
+                        placeholder="Password"
+                    />
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <!-- <label for="reregpass">Confirm Password</label> -->
+                    <input
+                        type="password"
+                        name="reregpass"
+                        id="cRegPass"
+                        placeholder="Password(confirmation)"
+                    />
+                    <span class="spin"></span>
+                </div>
+
+                <div class="button">
+                    <button onclick="signUp()"><span>NEXT</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="./main.js"></script>
+        <script src="./register.js"></script>
+    </body>
+</html>
